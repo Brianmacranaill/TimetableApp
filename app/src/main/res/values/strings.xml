@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CIT Timetable</string>
+    <string name="next">Next</string>
+    <string name="select_a_timetable_to_view">Select a timetable to view</string>
+    <string name="lecturer">Lecturer</string>
+    <string name="classGroup">Class Group</string>
+    <string name="selectClass">Select Class</string>
+    <string name="timetable">Timetable</string>
+    <string-array name="DropDownList">
+        <item>ItemOne</item>
+        <item>ItemTwo</item>
+        <item>ItemThree</item>
+    </string-array>
+    <string name="test">Test</string>
+</resources>

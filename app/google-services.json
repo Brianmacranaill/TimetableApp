@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "985861620991",
+    "firebase_url": "https://timetable-5673f.firebaseio.com",
+    "project_id": "timetable-5673f",
+    "storage_bucket": "timetable-5673f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985861620991:android:0a72b9057cbffe08",
+        "android_client_info": {
+          "package_name": "com.brian.cittimetableapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985861620991-pp1fkrvj081387bqle1tbjjasbo2ig7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA92z1jKtWGop7JdneOXavLnwo3aThKO0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
