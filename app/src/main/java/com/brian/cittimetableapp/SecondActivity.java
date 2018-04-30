@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -19,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SecondActivity extends AppCompatActivity {
-
+    Spinner mySpinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,14 +34,15 @@ public class SecondActivity extends AppCompatActivity {
                     return;
                 }
                 for (DataSnapshot classGroupSnapshot: dataSnapshot.getChildren()) {
+                    System.out.println("Testing print inside of datasnapshot for loop");
                     classGroupList.add(classGroupSnapshot.getKey());
                 }
-                Spinner mySpinner = findViewById(R.id.spinner1);
+                mySpinner = findViewById(R.id.spinner1);
 
                 ArrayAdapter<String> myAdapter = new ArrayAdapter<>(SecondActivity.this, android.R.layout.simple_list_item_1, classGroupList);
                 myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 mySpinner.setAdapter(myAdapter);
-                spinnerValue[0] = mySpinner.getSelectedItem().toString();
+
             }
 
             @Override
@@ -55,6 +55,7 @@ public class SecondActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                spinnerValue[0] = mySpinner.getSelectedItem().toString();
                 Intent intent = new Intent(SecondActivity.this, TimetableActivity.class);
                 intent.putExtra("selectedClass", spinnerValue[0]);
                 startActivity(intent);
