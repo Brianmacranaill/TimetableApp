@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e5e5e5"
+    android:background="#D31145"
     tools:context="com.brian.cittimetableapp.TimetableActivity">
 
         <HorizontalScrollView
@@ -12,95 +12,122 @@
             android:layout_height="fill_parent">
 
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:stretchColumns="*"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:gravity="center">
+                android:gravity="center"
+                android:textColor="#FFFFFF">
+
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:background="#000000"
-
+                    android:textColor="#FFFFFF"
                     >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/time"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
-                        android:gravity="center"
-                        android:text="@string/mon"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textStyle="bold" />
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
+                        android:gravity="center"
+                        android:text="@string/mon"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/tues"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textStyle="bold" />
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/wed"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textStyle="bold" />
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/thurs"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textStyle="bold" />
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/fri"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textStyle="bold" />
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -108,73 +135,94 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_09_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot00"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot10"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot20"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot30"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot40"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -182,73 +230,95 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_10_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot01"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot11"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot21"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot31"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot41"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -256,73 +326,94 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_11_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot02"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot12"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot22"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot32"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot42"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -330,73 +421,94 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_12_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot03"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot13"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot23"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot33"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot43"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -404,73 +516,94 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_13_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot04"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot14"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot24"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot34"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot44"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -478,73 +611,94 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_14_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot05"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot15"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot25"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot35"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot45"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -552,73 +706,94 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_15_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot06"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot16"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot26"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot36"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot46"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -626,73 +801,94 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_16_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot07"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot17"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot27"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot37"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot47"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_margin="1dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
                     android:layout_weight="1"
                     android:background="#000000">
 
@@ -700,67 +896,86 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:layout_margin="1dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
                         android:layout_weight=".01"
-                        android:background="#FFFFFF"
+                        android:background="#D31145"
                         android:gravity="center"
                         android:text="@string/_17_00"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot08"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_column="0"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="1"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot18"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="1"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot28"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="3"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot38"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="4"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
 
                     <TextView
                         android:id="@+id/timeSlot48"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_column="2"
-                        android:layout_margin="1dp"
-                        android:layout_weight=".2"
-                        android:background="#FFFFFF"
+                        android:layout_column="5"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#D31145"
                         android:gravity="center"
-                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="4dp"
+                        android:textColor="#FFFFFF" />
                 </TableRow>
             </TableLayout>
         </HorizontalScrollView>

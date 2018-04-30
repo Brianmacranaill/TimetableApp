@@ -1,5 +1,6 @@
 package com.brian.cittimetableapp;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -128,6 +129,7 @@ public class TimetableActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot ds : dataSnapshot.getChildren()){
                     textViewName.setText(ds.getKey());
+                    textViewName.setBackgroundColor(Color.parseColor("#A80F3A"));
                 }
             }
 

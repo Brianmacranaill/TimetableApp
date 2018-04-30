@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CIT Timetable</string>
     <string name="next">Next</string>
-    <string name="select_a_timetable_to_view">Select a timetable to view</string>
+    <string name="select_a_timetable_to_view">Select a view</string>
     <string name="lecturer">Lecturer</string>
     <string name="classGroup">Class Group</string>
     <string name="selectClass">Select Class</string>

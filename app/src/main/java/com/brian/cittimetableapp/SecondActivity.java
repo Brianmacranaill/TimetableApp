@@ -34,13 +34,13 @@ public class SecondActivity extends AppCompatActivity {
                     return;
                 }
                 for (DataSnapshot classGroupSnapshot: dataSnapshot.getChildren()) {
-                    System.out.println("Testing print inside of datasnapshot for loop");
                     classGroupList.add(classGroupSnapshot.getKey());
                 }
                 mySpinner = findViewById(R.id.spinner1);
 
                 ArrayAdapter<String> myAdapter = new ArrayAdapter<>(SecondActivity.this, android.R.layout.simple_list_item_1, classGroupList);
                 myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
                 mySpinner.setAdapter(myAdapter);
 
             }
@@ -67,8 +67,4 @@ public class SecondActivity extends AppCompatActivity {
         setTitle(getString(R.string.selectClass));
     }
 
-    public void toTimetable(View view) {
-        Intent newActivity = new Intent(this, TimetableActivity.class);
-        startActivity(newActivity);
-    }
 }
