@@ -1,8 +1,8 @@
 package com.brian.cittimetableapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -17,14 +17,14 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecondActivity extends AppCompatActivity {
+public class LecturerSecondActivity extends AppCompatActivity {
     Spinner mySpinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_second_lecturer);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("classes");
+        DatabaseReference myRef = database.getReference("lecturers");
         final String[] spinnerValue = new String[1];
         myRef.addValueEventListener(new ValueEventListener(){
             @Override
@@ -38,7 +38,7 @@ public class SecondActivity extends AppCompatActivity {
                 }
                 mySpinner = findViewById(R.id.spinner1);
 
-                ArrayAdapter<String> myAdapter = new ArrayAdapter<>(SecondActivity.this, android.R.layout.simple_list_item_1, classGroupList);
+                ArrayAdapter<String> myAdapter = new ArrayAdapter<>(LecturerSecondActivity.this, android.R.layout.simple_list_item_1, classGroupList);
                 myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
                 mySpinner.setAdapter(myAdapter);
@@ -56,7 +56,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 spinnerValue[0] = mySpinner.getSelectedItem().toString();
-                Intent intent = new Intent(SecondActivity.this, TimetableActivity.class);
+                Intent intent = new Intent(LecturerSecondActivity.this, LecturerTimetableActivity.class);
                 intent.putExtra("selectedLecturer", spinnerValue[0]);
                 startActivity(intent);
             }

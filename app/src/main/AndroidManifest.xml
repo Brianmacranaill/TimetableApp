@@ -17,8 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".LecturerSecondActivity"></activity>
         <activity android:name=".TimetableActivity"></activity>
+        <activity android:name=".LecturerTimetableActivity"></activity>
         <activity android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+        <activity android:name=".LecturerPop"
             android:theme="@style/AppTheme.CustomTheme">
         </activity>
     </application>

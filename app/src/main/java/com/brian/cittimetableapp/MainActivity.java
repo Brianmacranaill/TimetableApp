@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
         Intent newActivity = new Intent(this, SecondActivity.class);
         startActivity(newActivity);
     }
+
+    public void toSecondLecturerPage(View view) {
+        Intent newActivity = new Intent(this, LecturerSecondActivity.class);
+        startActivity(newActivity);
+    }
 }
