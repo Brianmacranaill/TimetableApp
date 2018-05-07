@@ -5,6 +5,7 @@
     <string name="lecturer">Lecturer</string>
     <string name="classGroup">Class Group</string>
     <string name="selectClass">Select Class</string>
+    <string name="selectLecturer">Select Lecturer</string>
     <string name="timetable">Timetable</string>
     <string name="test">Test</string>
     <string name="time">Time</string>

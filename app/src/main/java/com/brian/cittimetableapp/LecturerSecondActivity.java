@@ -64,7 +64,7 @@ public class LecturerSecondActivity extends AppCompatActivity {
 
 
 
-        setTitle(getString(R.string.selectClass));
+        setTitle(getString(R.string.selectLecturer));
     }
 
 }
