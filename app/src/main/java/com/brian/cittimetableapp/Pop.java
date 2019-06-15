@@ -26,8 +26,6 @@ public class Pop extends Activity{
         getWindow().setLayout((int) (width*.5), (int) (height*.3));
 
         final Bundle bundle = getIntent().getExtras();
-        String day = bundle.getString("day");
-        String time = bundle.getString("timeslot");
         final TextView roomView = findViewById(R.id.room);
         final TextView lecturerNameView = findViewById(R.id.lecturerName);
 

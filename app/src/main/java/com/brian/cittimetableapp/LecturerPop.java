@@ -26,14 +26,9 @@ public class LecturerPop extends Activity{
         getWindow().setLayout((int) (width*.5), (int) (height*.3));
 
         final Bundle bundle = getIntent().getExtras();
-        //String day = bundle.getString("day");
-        //String time = bundle.getString("timeslot");
         final TextView roomView = findViewById(R.id.room);
-        //roomView.setText("room test");
         final TextView classNameView = findViewById(R.id.className);
-        //classNameView.setText("classname test");
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        //final DatabaseReference myRef = database.getReference("classes/" + bundle.getString("classGroupName") + "/" + bundle.getString("day") + "/" + bundle.getString("timeslot") + "/" + bundle.getString("moduleName"));
         final DatabaseReference myRef = database.getReference("lecturers/" + bundle.getString("lecturerName") + "/" + bundle.getString("day") + "/" + bundle.getString("timeslot") + "/" + bundle.getString("moduleName"));
 
         ValueEventListener eventListener = new ValueEventListener(){

@@ -19,7 +19,7 @@ public class LecturerTimetableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timetable);
+        setContentView(R.layout.activity_timetable_lecturer);
 
         final Bundle bundle = getIntent().getExtras();
         final String lecturerName = bundle.getString("selectedLecturer");
@@ -618,7 +618,6 @@ public class LecturerTimetableActivity extends AppCompatActivity {
 
 
     public String[] fillTimeSlot(FirebaseDatabase database, String lecturerName, String day, String timeSlot, final TextView textViewName){
-        //DatabaseReference myRef = database.getReference("classes/" + classCode + "/" + day + "/" + timeSlot);
         DatabaseReference myRef = database.getReference("lecturers/" + lecturerName + "/" + day + "/" + timeSlot);
         final String[] moduleName = new String[1];
         ValueEventListener eventListener = new ValueEventListener(){
