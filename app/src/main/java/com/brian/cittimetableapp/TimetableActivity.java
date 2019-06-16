@@ -31,6 +31,7 @@ public class TimetableActivity extends AppCompatActivity {
 
         List<TextView> textviewList = new ArrayList<TextView>() {
             {
+                add ((TextView) findViewById(R.id.timeSlot00));
                 add ((TextView) findViewById(R.id.timeSlot01));
                 add ((TextView) findViewById(R.id.timeSlot02));
                 add ((TextView) findViewById(R.id.timeSlot03));
@@ -98,6 +99,12 @@ public class TimetableActivity extends AppCompatActivity {
                     }
                 });
                 textviewCounter++;
+                if (textviewCounter == textviewList.size()){
+                    break;
+                }
+            }
+            if (textviewCounter == textviewList.size()){
+                break;
             }
         }
     }
