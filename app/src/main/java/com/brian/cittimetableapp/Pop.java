@@ -28,7 +28,6 @@ public class Pop extends Activity{
         final Bundle bundle = getIntent().getExtras();
         final TextView roomView = findViewById(R.id.room);
         final TextView lecturerNameView = findViewById(R.id.lecturerName);
-
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("classes/" + bundle.getString("classGroupName") + "/" + bundle.getString("day") + "/" + bundle.getString("timeslot") + "/" + bundle.getString("moduleName"));
 
