@@ -90,12 +90,14 @@ public class TimetableActivity extends AppCompatActivity {
                 textviewList.get(textviewCounter).setOnClickListener(new View.OnClickListener(){
                     @Override
                     public void onClick(View v){
-                        Intent intent = new Intent(TimetableActivity.this, Pop.class);
-                        intent.putExtra("day", String.valueOf(finalDayCounter));
-                        intent.putExtra("timeslot", String.valueOf(finalTimeslotCounter));
-                        intent.putExtra("classGroupName", bundle.getString("selectedLecturer"));
-                        intent.putExtra("moduleName", module[0]);
-                        startActivity(intent);
+                        if(module[0] != null) {
+                            Intent intent = new Intent(TimetableActivity.this, Pop.class);
+                            intent.putExtra("day", String.valueOf(finalDayCounter));
+                            intent.putExtra("timeslot", String.valueOf(finalTimeslotCounter));
+                            intent.putExtra("classGroupName", bundle.getString("selectedLecturer"));
+                            intent.putExtra("moduleName", module[0]);
+                            startActivity(intent);
+                        }
                     }
                 });
                 textviewCounter++;
